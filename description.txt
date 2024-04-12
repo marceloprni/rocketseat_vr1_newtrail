@@ -1,0 +1,56 @@
+npm init -y
+
+npm i -D typescript 
+npx tsc --init / cria um tsconfig.json
+npx tsc src/index.ts
+
+##################
+npm i fastify
+npm install -D @types/node
+
+npm instal tsx -D
+npx tsx src/server.ts
+
+// verifica o tempo entra 
+time node src/server.js
+time tsx src/server.ts
+
+arquivo package.json 
+"dev": "tsx watch src/server.ts" - watch server como o nodemon
+
+npm i eslint @rocketseat/eslint-config -D - Realiza toda configuração de ponta e virgula
+
+"editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    }
+
+#############################
+
+npm install knex sqlite3
+npx knex -h
+npm run knex -- migrate:make create-documents  - criar a primeira migration
+npm run knex -- migrate:latest
+npm run knex -- migrate:rollback
+
+table.decimal('amount', 10, 2).notNullable()
+        table.timestamp('created_at').defaultTo(knex.fn.now()).notNullable()
+
+#############################
+npm i dotenv
+
+###########################
+npm i zod 
+
+###########################
+npm i @fastify/cookie
+
+##########################
+TESTE
+npm i vitest -D
+npm i supertest -D
+npm i -D @types/supertest
+
+##########################
+CONVERTE O TS PARA JS
+npm i tsup -D
+npm tsup -h - verifica todos os comando
