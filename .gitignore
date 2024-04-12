@@ -1,6 +1,5 @@
 node_modules
 tmp/app.db
 .env
-.env.example
 .env.test
 build
